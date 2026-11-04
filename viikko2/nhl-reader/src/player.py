@@ -34,3 +34,13 @@ class PlayerStats:
         filtered_players = [player for player in self.players if player.nationality == nationality]
         sorted_players = sorted(filtered_players, key=lambda player: player.goals + player.assists, reverse=True)
         return sorted_players
+
+    def top_scorers_by_team(self, team):
+        filtered_players = [player for player in self.players if player.team == team]
+        sorted_players = sorted(filtered_players, key=lambda player: player.goals + player.assists, reverse=True)
+        return sorted_players
+
+    def top_goal_scorers(self, how_many):
+        """Palauttaa how_many eniten maaleja tehnyttä pelaajaa maalimäärän mukaan laskevassa järjestyksessä"""
+        sorted_players = sorted(self.players, key=lambda player: player.goals, reverse=True)
+        return sorted_players[:how_many]

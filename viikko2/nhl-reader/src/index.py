@@ -21,16 +21,24 @@ def generate_table(players, season, nationality):
 
     return table
 
+def select_players(stats, selection):
+    if selection == "n":
+        nationality = input("Select a nationality (e.g. FIN): ")
+        return stats.top_scorers_by_nationality(nationality), nationality
+    if selection == "t":
+        team = input("Select a team (e.g. DAL): ")
+        return stats.top_scorers_by_team(team), team
+    raise ValueError("Select either n for nationality or t for team")
+
 def main():
     season = input("Select a season (e.g. 2024-25): ")
-    nationality = input("Select a nationality (e.g. FIN): ")
+    selection = input("Search by nationality or team (n/t): ")
 
     url = f"https://studies.cs.helsinki.fi/nhlstats/{season}/players"
     reader = PlayerReader(url)
     stats = PlayerStats(reader)
-    players = stats.top_scorers_by_nationality(nationality)
-
-    table = generate_table(players, season, nationality)
+    players, filter_value = select_players(stats, selection)
+    table = generate_table(players, season, filter_value)
     Console().print(table)
 
 if __name__ == "__main__":
