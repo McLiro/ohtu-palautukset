@@ -5,6 +5,8 @@ from tulo import tulo
 
 logger("aloitetaan ohjelma")
 
+# uusi kommenti
+
 x = int(input("luku 1: "))
 y = int(input("luku 2: "))
 print(f"{x} + {y} = {summa(x, y)}") 
