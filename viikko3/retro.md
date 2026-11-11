@@ -1,0 +1,5 @@
+Retrospektiivi on tapaaminen, jossa tiimin jäsenet keskustelevat yhdessä menneestä sprintistä. Retrospektiivin tarkoituksena on löytää tiimin kanssa asioita, jotka menivät sprintissä hyvin ja asioita joita voitaisiin parantaa. Retrospektiivissä voidaan tuoda myös esille asioita joiden tekeminen kannattaisi kokonaan lopettaa tai aloittaa.
+
+Retrospektiivi voidaan toteuttaa usealla eri ennalta suunnitellulla tekniikalla, joita on esim. “Start, Stop, Continue, More of, Less of Wheel”. Tekniikat usein perustuvat kierroksiin, jossa kerrallaan keskitytään vain yhteen kategoriaan, kuten “asiat jotka menivät viime sprintissä hyvin”. Retrospektiivissä käydään myös viime kerralla asetetut parannuskohteet, ja pohditaan toteutuiko ne.
+
+Retrospektiivissä on tärkeää että ympäristö on psykologisesti turvallinen. Turvallisessa ympäristössä ongelmien esille tuomisen kynnys on matalampi ja niistä puhuminen on helpompaa. Kun ongelmista puhutaan avoimesti ja heti kun ne esiintyy, voidaan välttää niiden esiintyminen tulevaisuudessa.
