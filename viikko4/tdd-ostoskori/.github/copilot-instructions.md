@@ -35,12 +35,19 @@ uv run pytest -q src/tests/ostoskori_test.py::TestOstoskori::test_ostoskorin_hin
 
 No separate build or lint command is configured in this project.
 
+## Change constraints
+
+- Do not change `src/ostos.py` or `src/tuote.py`.
+- Do not edit tests unless explicitly asked to do so.
+- Always implement the absolutely minimal code change that makes the tests
+  pass.
+
 ## Code conventions
 
 - Keep domain identifiers and test names in Finnish, matching the existing
   public API (`Tuote`, `Ostos`, `Ostoskori`, `lisaa_tuote`, `hinta`, etc.).
 - Tests use `unittest.TestCase` and `setUp`, and are executed by pytest.
-  Add cart behavior tests under `src/tests/`.
+  Add cart behavior tests under `src/tests/` only when explicitly asked.
 - The source modules use flat imports such as `from tuote import Tuote`.
   Preserve this layout and use the project-root pytest commands above rather
   than introducing a package hierarchy without a repository-wide reason.
