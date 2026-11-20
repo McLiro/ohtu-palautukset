@@ -39,8 +39,8 @@ No separate build or lint command is configured in this project.
 
 - Do not change `src/ostos.py` or `src/tuote.py`.
 - Do not edit tests unless explicitly asked to do so.
-- Always implement the absolutely minimal code change that makes the tests
-  pass.
+- Always only implement the absolutely minimal code change that makes the tests
+  pass. Do not add any code that is not strictly necessary for the tests to pass, even if it seems like a good idea.
 
 ## Code conventions
 
